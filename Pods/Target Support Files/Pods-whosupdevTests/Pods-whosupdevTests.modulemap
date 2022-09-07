@@ -1,0 +1,6 @@
+framework module Pods_whosupdevTests {
+  umbrella header "Pods-whosupdevTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

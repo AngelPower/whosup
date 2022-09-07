@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Instants Lio View Controller-->
+        <scene sceneID="iLG-4P-auG">
+            <objects>
+                <viewController storyboardIdentifier="InstantsLioViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A2b-NQ-IzM" customClass="InstantsLioViewController" customModule="whosupdev" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Qa-6q-Qhf"/>
+                        <viewControllerLayoutGuide type="bottom" id="ARW-kG-ERZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8rl-x5-5LW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UQW-pI-297" userLabel="Top Collection View">
+                                <rect key="frame" x="0.0" y="66" width="320" height="151"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UQW-pI-297" secondAttribute="height" multiplier="125:59" id="end-Bb-VWs"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sHp-vy-Kfx">
+                                    <size key="itemSize" width="377" height="242"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="A2b-NQ-IzM" id="KHQ-Ih-foW"/>
+                                    <outlet property="delegate" destination="A2b-NQ-IzM" id="MlC-xK-5RZ"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siQ-Gk-pLw">
+                                <rect key="frame" x="20" y="32" width="25" height="28"/>
+                                <state key="normal" image="noticone"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="# t'es chaud pour?" textAlignment="center" minimumFontSize="17" background="hatchagrect" translatesAutoresizingMaskIntoConstraints="NO" id="G9w-et-X3k">
+                                <rect key="frame" x="52.5" y="26" width="215" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bQS-x2-5MP"/>
+                                    <constraint firstAttribute="width" constant="215" id="qXP-l7-p8p"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UsE-ne-BcV">
+                                <rect key="frame" x="0.0" y="243" width="320" height="325"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OIn-9J-pwj">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="A2b-NQ-IzM" id="mQn-wn-5zw"/>
+                                    <outlet property="delegate" destination="A2b-NQ-IzM" id="Vle-pS-GmV"/>
+                                </connections>
+                            </collectionView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1g-tk-toT">
+                                <rect key="frame" x="8" y="243" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="130-2I-97f"/>
+                                    <constraint firstAttribute="width" constant="44" id="v14-k7-U1t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="×">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionCloseMood:" destination="A2b-NQ-IzM" eventType="touchUpInside" id="ZuH-aE-gsd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UQW-pI-297" firstAttribute="leading" secondItem="8rl-x5-5LW" secondAttribute="leading" id="1ki-aS-48z"/>
+                            <constraint firstItem="siQ-Gk-pLw" firstAttribute="leading" secondItem="8rl-x5-5LW" secondAttribute="leadingMargin" constant="4" id="9yl-DK-BLy"/>
+                            <constraint firstItem="G9w-et-X3k" firstAttribute="centerX" secondItem="8rl-x5-5LW" secondAttribute="centerX" id="E87-5C-K8Z"/>
+                            <constraint firstItem="g1g-tk-toT" firstAttribute="leading" secondItem="8rl-x5-5LW" secondAttribute="leading" constant="8" id="EIC-iS-A2o"/>
+                            <constraint firstItem="siQ-Gk-pLw" firstAttribute="top" secondItem="3Qa-6q-Qhf" secondAttribute="bottom" constant="12" id="FaJ-YG-zpM"/>
+                            <constraint firstItem="UQW-pI-297" firstAttribute="top" secondItem="G9w-et-X3k" secondAttribute="bottom" id="Jnb-iP-J8m"/>
+                            <constraint firstItem="g1g-tk-toT" firstAttribute="top" secondItem="UsE-ne-BcV" secondAttribute="top" id="NXi-3p-1Io"/>
+                            <constraint firstItem="UsE-ne-BcV" firstAttribute="leading" secondItem="8rl-x5-5LW" secondAttribute="leading" id="hLP-09-GO1"/>
+                            <constraint firstItem="UsE-ne-BcV" firstAttribute="top" secondItem="3Qa-6q-Qhf" secondAttribute="bottom" constant="223" id="i61-IR-a81"/>
+                            <constraint firstAttribute="trailing" secondItem="UsE-ne-BcV" secondAttribute="trailing" id="kxe-7Z-UpB"/>
+                            <constraint firstItem="ARW-kG-ERZ" firstAttribute="top" secondItem="UsE-ne-BcV" secondAttribute="bottom" id="oiS-hq-qTs"/>
+                            <constraint firstItem="G9w-et-X3k" firstAttribute="top" secondItem="3Qa-6q-Qhf" secondAttribute="bottom" constant="6" id="pES-eh-fHg"/>
+                            <constraint firstAttribute="trailing" secondItem="UQW-pI-297" secondAttribute="trailing" id="rrH-zt-R9R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomCollectionView" destination="UsE-ne-BcV" id="nXp-yL-mE9"/>
+                        <outlet property="buttonCloseMood" destination="g1g-tk-toT" id="hYI-Rt-pIS"/>
+                        <outlet property="buttonNotif" destination="siQ-Gk-pLw" id="VjJ-8l-jHb"/>
+                        <outlet property="textFieldHashtag" destination="G9w-et-X3k" id="kd4-RM-dws"/>
+                        <outlet property="topCollectionView" destination="UQW-pI-297" id="FPb-dj-K5U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CLd-ia-Xud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5876" y="52.623688155922046"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hatchagrect" width="253" height="40"/>
+        <image name="noticone" width="25" height="28"/>
+    </resources>
+</document>

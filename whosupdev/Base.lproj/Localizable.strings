@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  whosupdev
+
+  Created by Sophie Romanet on 11/07/2017.
+  Copyright © 2017 Sophie Romanet. All rights reserved.
+*/
+
+"soiree" = "SOIREE";
+"sport" = "SPORT";
+"food" = "FOOD";
+"game" = "GAME";
+"autres" = "OTHER";
+"chill" = "CHILL";
+"URLserver" = "http://82.236.159.23:8080";
